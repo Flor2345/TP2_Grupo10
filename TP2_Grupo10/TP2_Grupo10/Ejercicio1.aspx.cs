@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace TP2_Grupo10
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class Ejercicio1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void btnEjercicio1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Ejercicio1.aspx");
         }
     }
 }
