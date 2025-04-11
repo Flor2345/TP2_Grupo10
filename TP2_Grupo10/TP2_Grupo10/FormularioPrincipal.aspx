@@ -32,7 +32,7 @@
                 <tr>
                     <td class="auto-style2">Ejercicio 1:</td>
                     <td>
-                        <asp:Button ID="btnEjercicio1" runat="server" OnClick="btnEjercicio1_Click" Text="Ir" Width="62px" />
+                        <asp:Button ID="btnEjercicio1" runat="server" OnClick="btnEjercicio1_Click" Text="Ir" Width="60px" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -53,7 +53,9 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">Ejercicio 3:</td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="btnEjercicio3" runat="server" OnClick="btnEjercicio3_Click" Text="Ir" Width="60px" />
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>

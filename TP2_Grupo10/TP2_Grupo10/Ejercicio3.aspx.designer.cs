@@ -11,7 +11,7 @@ namespace TP2_Grupo10
 {
 
 
-    public partial class WebForm1
+    public partial class Ejercicio3
     {
 
         /// <summary>
@@ -22,23 +22,5 @@ namespace TP2_Grupo10
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// Control btnEjercicio1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEjercicio1;
-
-        /// <summary>
-        /// Control btnEjercicio3.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEjercicio3;
     }
 }
