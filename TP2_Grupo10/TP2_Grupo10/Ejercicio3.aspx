@@ -17,7 +17,9 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td>(LinkButton1)</td>
+                    <td>
+                        <asp:LinkButton ID="LnkBtnColorRojo" runat="server">LinkButton</asp:LinkButton>                        
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
