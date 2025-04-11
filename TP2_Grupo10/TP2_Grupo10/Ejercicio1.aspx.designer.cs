@@ -105,12 +105,21 @@ namespace TP2_Grupo10
         protected global::System.Web.UI.WebControls.TextBox txtCantidadIngreso2;
 
         /// <summary>
-        /// Control Panel2.
+        /// Control BtnGenerarTabla.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
+        protected global::System.Web.UI.WebControls.Button BtnGenerarTabla;
+
+        /// <summary>
+        /// Control LblTabla.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblTabla;
     }
 }

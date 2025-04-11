@@ -10,9 +10,6 @@
         .auto-style1 {
             width: 100%;
         }
-        .auto-style2 {
-            width: 908px;
-        }
         .auto-style9 {
             width: 10px;
             height: 23px;
@@ -95,7 +92,18 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style16">&nbsp;</td>
+                    <td class="auto-style17"></td>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style19"></td>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style15"></td>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style12"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style16">
+                        <asp:Button ID="BtnGenerarTabla" runat="server" OnClick="BtnGenerarTabla_Click" Text="Generar tabla" Width="132px" />
+                    </td>
                     <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style18">&nbsp;</td>
                     <td class="auto-style13">&nbsp;</td>
@@ -104,16 +112,9 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style16">&nbsp;</td>
-                    <td class="auto-style13">&nbsp;</td>
-                    <td class="auto-style18">&nbsp;</td>
-                    <td class="auto-style13">&nbsp;</td>
-                    <td class="auto-style14">&nbsp;</td>
-                    <td class="auto-style13">&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style16">&nbsp;</td>
+                    <td class="auto-style16">
+                        <asp:Label ID="LblTabla" runat="server"></asp:Label>
+                    </td>
                     <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style18">&nbsp;</td>
                     <td class="auto-style13">&nbsp;</td>
@@ -124,19 +125,6 @@
             </table>
         </asp:Panel>
     </div>
-      <asp:Panel ID="Panel2" runat="server" Width="130px">
-          <table class="auto-style1" border="1">
-              <tr>
-                  <td class="auto-style2"><strong>Producto</strong></td>
-                  <td class="auto-style2"><strong>Cantidad</strong></td>
-              </tr>
-              <!-- Productos agregados de manera dinámica acá para abajo. -->
-              <tr>
-                  <td><strong>TOTAL</strong></td>
-                  <td id="celdaTotal">0</td>
-              </tr>
-          </table>
-      </asp:Panel>
   </form>
 </body>
 </html>
