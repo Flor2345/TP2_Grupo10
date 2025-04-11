@@ -17,15 +17,15 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
+                    <td>(LinkButton1)</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
+                    <td>(LinkButton2)</td>
                     <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>(LinkButton3)</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
