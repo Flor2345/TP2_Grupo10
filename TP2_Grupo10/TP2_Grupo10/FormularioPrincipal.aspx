@@ -13,6 +13,13 @@
         .auto-style2 {
             width: 155px;
         }
+        .auto-style3 {
+            width: 155px;
+            height: 30px;
+        }
+        .auto-style4 {
+            height: 30px;
+        }
     </style>
 </head>
 <body>
@@ -42,9 +49,11 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">Ejercicio 2:</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">Ejercicio 2:</td>
+                    <td class="auto-style4">
+                        <asp:Button ID="btnEjercicio2" runat="server" OnClick="btnEjercicio2_Click" Text="Ir" Width="60px" />
+                    </td>
+                    <td class="auto-style4"></td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
