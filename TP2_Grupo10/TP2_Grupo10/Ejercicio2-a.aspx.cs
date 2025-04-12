@@ -13,5 +13,10 @@ namespace TP2_Grupo10
         {
 
         }
+
+        protected void btnVerResumen_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio2-b.aspx");
+        }
     }
 }
