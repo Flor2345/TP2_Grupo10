@@ -105,6 +105,24 @@ namespace TP2_Grupo10
         protected global::System.Web.UI.WebControls.TextBox txtCantidadIngreso2;
 
         /// <summary>
+        /// Control Validar_IngresosP.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator Validar_IngresosP;
+
+        /// <summary>
+        /// Control Validar_IngresosC.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator Validar_IngresosC;
+
+        /// <summary>
         /// Control BtnGenerarTabla.
         /// </summary>
         /// <remarks>

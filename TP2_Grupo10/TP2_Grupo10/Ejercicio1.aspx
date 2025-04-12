@@ -54,7 +54,7 @@
                     </td>
                     <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style18">
-                        <asp:TextBox ID="txtProductoIngreso1" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtProductoIngreso1" runat="server" AutoPostBack="True" OnTextChanged="Restaurar_ColorFondo_Producto1"></asp:TextBox>
                     </td>
                     <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style14">
@@ -62,7 +62,7 @@
                     </td>
                     <td class="auto-style13">&nbsp;</td>
                     <td>
-                        <asp:TextBox ID="txtCantidadIngreso1" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtCantidadIngreso1" runat="server" AutoPostBack="True" OnTextChanged="Restaurar_ColorFondo_Cantidad1"></asp:TextBox>
                         &nbsp;&nbsp;</td>
                 </tr>
                 <tr>
@@ -80,7 +80,7 @@
                     </td>
                     <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style18">
-                        <asp:TextBox ID="txtProductoIngreso2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtProductoIngreso2" runat="server" AutoPostBack="True" OnTextChanged="Restaurar_ColorFondo_Producto2"></asp:TextBox>
                     </td>
                     <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style14">
@@ -88,17 +88,21 @@
                     </td>
                     <td class="auto-style13">&nbsp;</td>
                     <td>
-                        <asp:TextBox ID="txtCantidadIngreso2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtCantidadIngreso2" runat="server" AutoPostBack="True" OnTextChanged="Restaurar_ColorFondo_Cantidad2"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style17"></td>
                     <td class="auto-style9"></td>
-                    <td class="auto-style19"></td>
+                    <td class="auto-style19">
+                        <asp:CustomValidator ID="Validar_IngresosP" runat="server" OnServerValidate="ValidarIngresos_Nombres_ServerValidate" SetFocusOnError="True" ValidateEmptyText="True"></asp:CustomValidator>
+                    </td>
                     <td class="auto-style9"></td>
                     <td class="auto-style15"></td>
                     <td class="auto-style9"></td>
-                    <td class="auto-style12"></td>
+                    <td class="auto-style12">
+                        <asp:CustomValidator ID="Validar_IngresosC" runat="server" OnServerValidate="ValidarIngresos_Cantidades_ServerValidate" SetFocusOnError="True" ValidateEmptyText="True"></asp:CustomValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style16">
