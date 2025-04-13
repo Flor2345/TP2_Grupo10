@@ -9,6 +9,13 @@ namespace TP2_Grupo10
 {
     public partial class Ejercicio5 : System.Web.UI.Page
     {
+        decimal precio1M = 200.00M;
+        decimal precio2M = 375.00M;
+        decimal precio3M = 500.00M;
+        decimal precio1A = 2000.00M;
+        decimal precio2A = 550.50M;
+        decimal precio3A = 1200.00M;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -18,18 +25,51 @@ namespace TP2_Grupo10
         {
             //if () Deberia validar si el usuario selecciono un item en el DropDownList y al menos un item en el CheckBoxList.*/|
             //{
+            decimal precioMemoria = 0;
+            decimal precioTotalAccesorios = 0;
+            List<string> listaValoresAccesorios = new List<string>();
 
-            // Combierte el Value del item seleccionado a decimal (devolveria un 0 si fallara).
-            decimal.TryParse(DDL_Memoria.SelectedValue, out decimal precioMemoriaDecimal);
+            if (DDL_Memoria.SelectedValue != "0")
+            {
+                if (DDL_Memoria.SelectedValue != "1")
+                {
+                    precioMemoria = precio1M;
+                }
+                else if (DDL_Memoria.SelectedValue != "2")
+                {
+                    precioMemoria = precio2M;
+                }
+                else if (DDL_Memoria.SelectedValue != "3")
+                {
+                    precioMemoria = precio3M;
+                }
+            }
 
-            decimal sumaAccesorios = CBL_Accesorios.Items.Cast<ListItem>()
-                                                  // Filtra los items seleccionados en el CheckBoxList.
-                                                  .Where(i => i.Selected) 
-                                                  // Combierte los valores Value de cada item seleccionado a decimal y los suma.
-                                                  .Sum(i => decimal.TryParse(i.Value, out decimal valor) ? valor : 0);
+            foreach (ListItem item in CBL_Accesorios.Items)
+            {
+                if (item.Selected)
+                {
+                    listaValoresAccesorios.Add(item.Value);
 
-            // Calcula el precio total sumando el precio de la memoria y los accesorios.
-            decimal PrecioTotal = precioMemoriaDecimal + sumaAccesorios;
+                }
+            }
+
+             // Convierte el precio de los accesorios a decimal.
+            if (listaValoresAccesorios.Any(valor => valor == "1"))
+            {
+                precioTotalAccesorios += precio1A;
+            }
+            else if (listaValoresAccesorios.Any(valor => valor == "2"))
+            {
+                precioTotalAccesorios += precio2A;
+            }
+            else if (listaValoresAccesorios.Any(valor => valor == "3"))
+            {
+                precioTotalAccesorios += precio3A;
+            }
+
+                // Calcula el precio total sumando el precio de la memoria y los accesorios.
+                decimal PrecioTotal = precioMemoria + precioTotalAccesorios;
 
             // Muestra el precio total formateado como moneda.
             Precio_Final.Text = "El Precio final es de " + PrecioTotal.ToString("C2");
