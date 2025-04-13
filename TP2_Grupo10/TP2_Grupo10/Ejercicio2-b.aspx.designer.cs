@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TP2_Grupo10
-{
-
-
-    public partial class Ejercicio2_b
-    {
-
+namespace TP2_Grupo10 {
+    
+    
+    public partial class Ejercicio2_b {
+        
         /// <summary>
         /// control form1.
         /// </summary>

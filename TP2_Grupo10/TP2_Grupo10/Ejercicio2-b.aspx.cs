@@ -7,12 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace TP2_Grupo10
 {
-    public partial class Ejercicio2_b : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-           
+	public partial class Ejercicio2_b : System.Web.UI.Page
+	{
+		protected void Page_Load(object sender, EventArgs e)
+		{
 
-        }
-    }
+		}
+	}
 }
