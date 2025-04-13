@@ -85,9 +85,16 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style4"></td>
+                <td class="auto-style4">Ciudad:</td>
                 <td class="auto-style5"></td>
-                <td class="auto-style6"></td>
+                <td class="auto-style6">
+                        <asp:DropDownList ID="DropDownList_Ciudad" runat="server" Width="236px" AutoPostBack="True" OnSelectedIndexChanged="Restaurar_ColorFondo_Ciudad">
+                            <asp:ListItem Value="Seleccione una opcion">Seleccione una opcion</asp:ListItem>
+                            <asp:ListItem Value="zona oeste">San Miguel</asp:ListItem>
+                            <asp:ListItem Value="zona sur">Boedo</asp:ListItem>
+                            <asp:ListItem Value="zona norte">Gral. Pacheco</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
                 <td class="auto-style6"></td>
                 <td class="auto-style6"></td>
                 <td class="auto-style6"></td>
@@ -106,9 +113,15 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style7">Temas:</td>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style8">
+                        <asp:CheckBoxList ID="CheckBoxList_Temas" runat="server" AutoPostBack="True" OnTextChanged="Restaurar_ColorFondo_Temas">
+                            <asp:ListItem>Ciencias</asp:ListItem>
+                            <asp:ListItem>Literatura</asp:ListItem>
+                            <asp:ListItem>Historia</asp:ListItem>
+                        </asp:CheckBoxList>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
