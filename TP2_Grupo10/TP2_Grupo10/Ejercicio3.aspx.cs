@@ -20,5 +20,10 @@ namespace TP2_Grupo10
             lblTextoColoreado.Text = "El color seleccionado es Azul";
             lblTextoColoreado.ForeColor = System.Drawing.Color.Blue;
         }
+
+        protected void btnVolverMenu_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FormularioPrincipal.aspx");
+        }
     }
 }
