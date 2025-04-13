@@ -26,7 +26,7 @@ namespace TP2_Grupo10
 
         protected void btnEjercicio2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Ejercicio2.aspx");
+            Response.Redirect("Ejercicio2-a.aspx");
         }
     }
 }
