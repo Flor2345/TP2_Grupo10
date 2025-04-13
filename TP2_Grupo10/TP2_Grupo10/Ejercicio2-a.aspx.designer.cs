@@ -42,6 +42,24 @@ namespace TP2_Grupo10
         protected global::System.Web.UI.WebControls.Label lblApellido;
 
         /// <summary>
+        /// Control DropDownList_Ciudad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_Ciudad;
+
+        /// <summary>
+        /// Control CheckBoxList_Temas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList_Temas;
+
+        /// <summary>
         /// Control btnVerResumen.
         /// </summary>
         /// <remarks>
