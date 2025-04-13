@@ -87,7 +87,9 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">Ejercicio 5:</td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="btnEjercicio5" runat="server" OnClick="btnEjercicio5_Click" Text="Ir" Width="60px" />
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
