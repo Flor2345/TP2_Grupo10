@@ -10,6 +10,9 @@
         .auto-style1 {
             width: 100%;
         }
+        .auto-style2 {
+            height: 31px;
+        }
     </style>
 </head>
 <body>
@@ -18,13 +21,15 @@
             <table class="auto-style1">
                 <tr>
                     <td>
-                        <asp:LinkButton ID="LnkBtnColorRojo" runat="server">LinkButton</asp:LinkButton>                        
+                        <asp:LinkButton ID="LnkBtnColorRojo" runat="server">Rojo</asp:LinkButton>                        
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>(LinkButton2)</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style2">
+                    <asp:LinkButton ID="LnkBtnColorAzul" runat="server" ForeColor="Blue" OnClick="LinkButton_Azul_Click">Azul</asp:LinkButton>
+                    </td>
+                    <td class="auto-style2"></td>
                 </tr>
                 <tr>
                     <td>(LinkButton3)</td>

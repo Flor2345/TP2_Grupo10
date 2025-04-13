@@ -11,11 +11,11 @@ namespace TP2_Grupo10
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string usuario;
+            string usuarioMensaje;
 
-            usuario = Request.QueryString["Usuario"];
+            usuarioMensaje = Request.QueryString["UsuarioMensaje"];
 
-            lblMensaje.Text = "Bienvenido a mi página Sr./a " + usuario;
+            lblMensaje.Text =  usuarioMensaje;
         }
     }
 }

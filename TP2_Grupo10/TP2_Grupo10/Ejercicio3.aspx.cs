@@ -13,5 +13,12 @@ namespace TP2_Grupo10
         {
 
         }
+
+        protected void LinkButton_Azul_Click(object sender, EventArgs e)
+        {
+            // Cambia el texto y el color del label al hacer clic en el LinkButton
+            lblTextoColoreado.Text = "El color seleccionado es Azul";
+            lblTextoColoreado.ForeColor = System.Drawing.Color.Blue;
+        }
     }
 }

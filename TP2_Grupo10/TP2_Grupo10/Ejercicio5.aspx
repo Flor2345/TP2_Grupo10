@@ -11,7 +11,7 @@
             width: 100%;
         }
         .auto-style2 {
-            width: 378px;
+            width: 123px;
         }
     </style>
 </head>
@@ -27,37 +27,36 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">
-                        <asp:DropDownList ID="DropDownList1" runat="server" Width="125px">
-                            <asp:ListItem Value="1">2 GB</asp:ListItem>
-                            <asp:ListItem Value="2">4 GB</asp:ListItem>
-                            <asp:ListItem Value="3">6 GB</asp:ListItem>
-                        </asp:DropDownList>
-                    </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>
+                               <asp:Label ID="Label_Titulo" runat="server" Font-Size="XX-Large" Font-Bold="True" ForeColor="Black" Style="white-space: nowrap;">Elija su configuracion</asp:Label>
+                           </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:CheckBoxList ID="cblAccesorios" runat="server">
-                            <asp:ListItem>Monitor LCD</asp:ListItem>
-                            <asp:ListItem>HD 500GB</asp:ListItem>
-                            <asp:ListItem>Grabador DVD</asp:ListItem>
-                        </asp:CheckBoxList>
-                    </td>
+                        &nbsp;</td>
                     <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>Seleccione cantidad de memoria:</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        &nbsp;</td>
+                    <td>
+                               <asp:DropDownList ID="DDL_Memoria" runat="server" Width="232px" AutoPostBack="True">
+                                   <asp:ListItem Value="0">Seleccione una opcion</asp:ListItem>
+                                   <asp:ListItem Value="200">2 GB</asp:ListItem>
+                                   <asp:ListItem Value="375">4 GB</asp:ListItem>
+                                   <asp:ListItem Value="500">6 GB</asp:ListItem>
+                               </asp:DropDownList>
+                           </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -69,7 +68,19 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
+                    <td>Seleccione accesorios:</td>
                     <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>
+                               <asp:CheckBoxList ID="CBL_Accesorios" runat="server" AutoPostBack="True">
+                                   <asp:ListItem Value="2000.50">Monitor LCD</asp:ListItem>
+                                   <asp:ListItem Value="550.50">HD 500GB</asp:ListItem>
+                                   <asp:ListItem Value="1200">Grabador DVD</asp:ListItem>
+                               </asp:CheckBoxList>
+                           </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -81,13 +92,23 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>
+                               <asp:Button ID="Button_Calcular" runat="server" OnClick="Button_Calcular_Click" Text="Calcular Precio" />
+                           </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>
+                               <asp:Label ID="Precio_Final" runat="server"></asp:Label>
+                           </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>

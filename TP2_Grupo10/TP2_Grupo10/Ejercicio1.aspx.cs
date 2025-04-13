@@ -24,18 +24,25 @@ namespace TP2_Grupo10
              );
         }
 
+
+        // Valida los nombres de producto ingresados en el servidor.
         protected void ValidarIngresos_Nombres_ServerValidate(object source, ServerValidateEventArgs args)
         {
             Validaciones validaciones = new Validaciones();
+            // Llama a la lógica de validación y actualiza el estado de validez (args.IsValid).
             args.IsValid = validaciones.Validar_NombresProductos(txtProductoIngreso1, txtProductoIngreso2, Validar_IngresosP);
         }
 
+        // Valida las cantidades de producto ingresadas en el servidor.
         protected void ValidarIngresos_Cantidades_ServerValidate(object source, ServerValidateEventArgs args)
         {
             Validaciones validaciones = new Validaciones();
+            // Llama a la lógica de validación y actualiza el estado de validez (args.IsValid).
             args.IsValid = validaciones.Validar_Cantidades(txtCantidadIngreso1, txtCantidadIngreso2, Validar_IngresosC);
         }
 
+
+        // --------------------  Metodos para restaura el color del fondo de cada campo -------------------- 
         protected void Restaurar_ColorFondo_Producto1(object sender, EventArgs e)
         {
             txtProductoIngreso1.BackColor = System.Drawing.Color.White;
@@ -55,6 +62,7 @@ namespace TP2_Grupo10
         {
             txtCantidadIngreso2.BackColor = System.Drawing.Color.White;
         }
+        //---------------------------------------------------------------------------------------------------
 
         protected void BtnGenerarTabla_Click(object sender, EventArgs e)
         {

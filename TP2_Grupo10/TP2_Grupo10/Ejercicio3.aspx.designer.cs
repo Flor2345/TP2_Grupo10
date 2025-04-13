@@ -33,6 +33,15 @@ namespace TP2_Grupo10
         protected global::System.Web.UI.WebControls.LinkButton LnkBtnColorRojo;
 
         /// <summary>
+        /// Control LnkBtnColorAzul.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LnkBtnColorAzul;
+
+        /// <summary>
         /// Control lblTextoColoreado.
         /// </summary>
         /// <remarks>

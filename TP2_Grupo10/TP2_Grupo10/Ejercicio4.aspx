@@ -46,7 +46,7 @@
                     <td class="auto-style2">Clave:</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>
-                        <asp:TextBox ID="txtClave" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtClave" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -65,7 +65,9 @@
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="Button_Validar" runat="server" OnClick="Button_Validar_Click" Text="Validar" />
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
