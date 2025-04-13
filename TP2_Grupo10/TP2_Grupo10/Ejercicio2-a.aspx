@@ -47,8 +47,8 @@
             <tr>
                 <td class="auto-style7">Nombre:</td>
                 <td class="auto-style2">&nbsp;</td>
-                <td>
-                    <asp:Label ID="lblNombre" runat="server"></asp:Label>
+                <td id="lblNombre">
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -68,7 +68,7 @@
                 <td class="auto-style7">Apellido:</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>
-                    <asp:Label ID="lblApellido" runat="server"></asp:Label>
+                    <asp:TextBox ID="lblApellido" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
