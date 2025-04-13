@@ -1,180 +1,93 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio2-a.aspx.cs" Inherits="TP2_Grupo10.Ejercicio2" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
+    <meta charset="utf-8" />
+    <title>Ejercicio 2-A</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            padding: 20px;
         }
-        .auto-style2 {
-            width: 24px;
+
+        .form-container {
+            background-color: white;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
         }
-        .auto-style4 {
-            width: 83px;
-            height: 23px;
+
+        .form-row {
+            margin-bottom: 15px;
         }
-        .auto-style5 {
-            width: 24px;
-            height: 23px;
+
+        .form-label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
         }
-        .auto-style6 {
-            height: 23px;
+
+        .form-input {
+            width: 250px;
         }
-        .auto-style7 {
-            width: 83px;
+
+        .form-checkboxlist {
+            margin-left: 100px;
         }
-        .auto-style8 {
-            width: 436px;
+
+        .btn-resumen {
+            margin-left: 100px;
+            padding: 8px 16px;
+            background-color: #dcdcdc;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-resumen:hover {
+            background-color: #c0c0c0;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <table class="auto-style1">
-            <tr>
-                <td class="auto-style7">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style7">Nombre:</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td id="lblNombre">
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style7">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style7">Apellido:</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>
-                    <asp:TextBox ID="lblApellido" runat="server"></asp:TextBox>
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style7">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style4">Ciudad:</td>
-                <td class="auto-style5"></td>
-                <td class="auto-style6">
-                        <asp:DropDownList ID="DropDownList_Ciudad" runat="server" Width="236px" AutoPostBack="True">
-                            <asp:ListItem Value="Seleccione una opcion">Seleccione una opcion</asp:ListItem>
-                            <asp:ListItem Value="zona oeste">San Miguel</asp:ListItem>
-                            <asp:ListItem Value="zona sur">Boedo</asp:ListItem>
-                            <asp:ListItem Value="zona norte">Gral. Pacheco</asp:ListItem>
-                        </asp:DropDownList>
-                    </td>
-                <td class="auto-style6"></td>
-                <td class="auto-style6"></td>
-                <td class="auto-style6"></td>
-                <td class="auto-style6"></td>
-            </tr>
-            <tr>
-                <td class="auto-style7">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
-        <div>
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style7">Temas:</td>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style8">
-                        <asp:CheckBoxList ID="CheckBoxList_Temas" runat="server" AutoPostBack="True">
-                            <asp:ListItem Value="1">Ciencias</asp:ListItem>
-                            <asp:ListItem Value="2">Literatura</asp:ListItem>
-                            <asp:ListItem Value="3">Historia</asp:ListItem>
-                        </asp:CheckBoxList>
-                    </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style8">
-                        <asp:Button ID="btnVerResumen" runat="server" OnClick="btnVerResumen_Click" Text="Ver resumen" Width="112px" />
-                    </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
+        <div class="form-container">
+            <div class="form-row">
+                <label class="form-label">Nombre:</label>
+                <asp:TextBox ID="TextBox1" runat="server" CssClass="form-input"></asp:TextBox>
+            </div>
+
+            <div class="form-row">
+                <label class="form-label">Apellido:</label>
+                <asp:TextBox ID="lblApellido" runat="server" CssClass="form-input"></asp:TextBox>
+            </div>
+
+            <div class="form-row">
+                <label class="form-label">Ciudad:</label>
+                <asp:DropDownList ID="DropDownList_Ciudad" runat="server" Width="256px" AutoPostBack="True">
+                    <asp:ListItem Value="Seleccione una opcion">Seleccione una opcion</asp:ListItem>
+                    <asp:ListItem Value="zona oeste">San Miguel</asp:ListItem>
+                    <asp:ListItem Value="zona sur">Boedo</asp:ListItem>
+                    <asp:ListItem Value="zona norte">Gral. Pacheco</asp:ListItem>
+                </asp:DropDownList>
+            </div>
+
+            <div class="form-row">
+                <label class="form-label">Temas:</label>
+                <asp:CheckBoxList ID="CheckBoxList_Temas" runat="server" CssClass="form-checkboxlist" AutoPostBack="True">
+                    <asp:ListItem Value="1">Ciencias</asp:ListItem>
+                    <asp:ListItem Value="2">Literatura</asp:ListItem>
+                    <asp:ListItem Value="3">Historia</asp:ListItem>
+                </asp:CheckBoxList>
+            </div>
+
+            <div class="form-row">
+                <asp:Button ID="btnVerResumen" runat="server" CssClass="btn-resumen" Text="Ver resumen" OnClick="btnVerResumen_Click" />
+            </div>
         </div>
     </form>
 </body>
