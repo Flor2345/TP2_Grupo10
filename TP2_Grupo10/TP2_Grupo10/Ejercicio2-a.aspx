@@ -88,7 +88,7 @@
                 <td class="auto-style4">Ciudad:</td>
                 <td class="auto-style5"></td>
                 <td class="auto-style6">
-                        <asp:DropDownList ID="DropDownList_Ciudad" runat="server" Width="236px" AutoPostBack="True" OnSelectedIndexChanged="Restaurar_ColorFondo_Ciudad">
+                        <asp:DropDownList ID="DropDownList_Ciudad" runat="server" Width="236px" AutoPostBack="True">
                             <asp:ListItem Value="Seleccione una opcion">Seleccione una opcion</asp:ListItem>
                             <asp:ListItem Value="zona oeste">San Miguel</asp:ListItem>
                             <asp:ListItem Value="zona sur">Boedo</asp:ListItem>
@@ -116,7 +116,7 @@
                     <td class="auto-style7">Temas:</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style8">
-                        <asp:CheckBoxList ID="CheckBoxList_Temas" runat="server" AutoPostBack="True" OnTextChanged="Restaurar_ColorFondo_Temas">
+                        <asp:CheckBoxList ID="CheckBoxList_Temas" runat="server" AutoPostBack="True">
                             <asp:ListItem>Ciencias</asp:ListItem>
                             <asp:ListItem>Literatura</asp:ListItem>
                             <asp:ListItem>Historia</asp:ListItem>
