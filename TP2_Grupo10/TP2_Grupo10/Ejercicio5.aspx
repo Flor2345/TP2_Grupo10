@@ -52,9 +52,9 @@
                     <td>
                                <asp:DropDownList ID="DDL_Memoria" runat="server" Width="232px" AutoPostBack="True">
                                    <asp:ListItem Value="0">Seleccione una opcion</asp:ListItem>
-                                   <asp:ListItem Value="200">2 GB</asp:ListItem>
-                                   <asp:ListItem Value="375">4 GB</asp:ListItem>
-                                   <asp:ListItem Value="500">6 GB</asp:ListItem>
+                                   <asp:ListItem Value="1">2 GB</asp:ListItem>
+                                   <asp:ListItem Value="2">4 GB</asp:ListItem>
+                                   <asp:ListItem Value="3">6 GB</asp:ListItem>
                                </asp:DropDownList>
                            </td>
                     <td>&nbsp;</td>
@@ -76,9 +76,9 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td>
                                <asp:CheckBoxList ID="CBL_Accesorios" runat="server" AutoPostBack="True">
-                                   <asp:ListItem Value="2000.50">Monitor LCD</asp:ListItem>
-                                   <asp:ListItem Value="550.50">HD 500GB</asp:ListItem>
-                                   <asp:ListItem Value="1200">Grabador DVD</asp:ListItem>
+                                   <asp:ListItem Value="1">Monitor LCD</asp:ListItem>
+                                   <asp:ListItem Value="2">HD 500GB</asp:ListItem>
+                                   <asp:ListItem Value="3">Grabador DVD</asp:ListItem>
                                </asp:CheckBoxList>
                            </td>
                     <td>&nbsp;</td>

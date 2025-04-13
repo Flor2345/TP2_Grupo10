@@ -117,9 +117,9 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style8">
                         <asp:CheckBoxList ID="CheckBoxList_Temas" runat="server" AutoPostBack="True">
-                            <asp:ListItem>Ciencias</asp:ListItem>
-                            <asp:ListItem>Literatura</asp:ListItem>
-                            <asp:ListItem>Historia</asp:ListItem>
+                            <asp:ListItem Value="1">Ciencias</asp:ListItem>
+                            <asp:ListItem Value="2">Literatura</asp:ListItem>
+                            <asp:ListItem Value="3">Historia</asp:ListItem>
                         </asp:CheckBoxList>
                     </td>
                     <td>&nbsp;</td>

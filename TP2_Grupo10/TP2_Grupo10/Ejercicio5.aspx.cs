@@ -27,56 +27,54 @@ namespace TP2_Grupo10
             //{
             decimal precioMemoria = 0;
             decimal precioTotalAccesorios = 0;
-            List<string> listaValoresAccesorios = new List<string>();
+     
 
             if (DDL_Memoria.SelectedValue != "0")
             {
-                if (DDL_Memoria.SelectedValue != "1")
+                if (DDL_Memoria.SelectedValue == "1")
                 {
                     precioMemoria = precio1M;
                 }
-                else if (DDL_Memoria.SelectedValue != "2")
+                else if (DDL_Memoria.SelectedValue == "2")
                 {
                     precioMemoria = precio2M;
                 }
-                else if (DDL_Memoria.SelectedValue != "3")
+                else if (DDL_Memoria.SelectedValue == "3")
                 {
                     precioMemoria = precio3M;
                 }
-            }
 
-            foreach (ListItem item in CBL_Accesorios.Items)
-            {
-                if (item.Selected)
+
+                foreach (ListItem item in CBL_Accesorios.Items)
                 {
-                    listaValoresAccesorios.Add(item.Value);
-
+                    if (item.Selected)
+                    {
+                        // Suma los precio de los accesorios seleccionados.
+                        if (item.Value == "1")
+                        {
+                            precioTotalAccesorios += precio1A;
+                        }
+                        else if (item.Value == "2")
+                        {
+                            precioTotalAccesorios += precio2A;
+                        }
+                        else if (item.Value == "3")
+                        {
+                            precioTotalAccesorios += precio3A;
+                        }
+                    }
                 }
-            }
-
-             // Convierte el precio de los accesorios a decimal.
-            if (listaValoresAccesorios.Any(valor => valor == "1"))
-            {
-                precioTotalAccesorios += precio1A;
-            }
-            else if (listaValoresAccesorios.Any(valor => valor == "2"))
-            {
-                precioTotalAccesorios += precio2A;
-            }
-            else if (listaValoresAccesorios.Any(valor => valor == "3"))
-            {
-                precioTotalAccesorios += precio3A;
-            }
 
                 // Calcula el precio total sumando el precio de la memoria y los accesorios.
                 decimal PrecioTotal = precioMemoria + precioTotalAccesorios;
 
-            // Muestra el precio total formateado como moneda.
-            Precio_Final.Text = "El Precio final es de " + PrecioTotal.ToString("C2");
-            //}
-            //else
-            //{
-            //}
+                // Muestra el precio total formateado como moneda.
+                Precio_Final.Text = "El Precio final es de " + PrecioTotal.ToString("C2");
+                //}
+                //else
+                //{
+                //}
+            }
         }
     
     }
