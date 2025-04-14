@@ -32,5 +32,12 @@ namespace TP2_Grupo10
             lblTextoColoreado.Text = "El color seleccionado es Rojo";
             lblTextoColoreado.ForeColor = System.Drawing.Color.Red;
         }
+
+        protected void LnkBtnVerde_Click(object sender, EventArgs e)
+        {
+            //Cambia el texto y el color del label al hacer clic en el LinkButton
+            lblTextoColoreado.Text = "El color seleccionado es Verde";
+            lblTextoColoreado.ForeColor = System.Drawing.Color.LightGreen;
+        }
     }
 }

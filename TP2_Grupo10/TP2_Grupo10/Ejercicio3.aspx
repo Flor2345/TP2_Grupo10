@@ -22,6 +22,9 @@
             cursor: pointer;
             font-size: 16px;
         }
+        .auto-style3 {
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -41,8 +44,10 @@
                     <td class="auto-style2"></td>
                 </tr>
                 <tr>
-                    <td>(LinkButton3)</td>
-                    <td>&nbsp;</td>
+                    <td id="LnkBtnVerde" class="auto-style3">
+                        <asp:LinkButton ID="LnkBtnVerde" runat="server" ForeColor="Blue" OnClick="LnkBtnVerde_Click">Verde</asp:LinkButton>
+                    </td>
+                    <td class="auto-style3"></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
