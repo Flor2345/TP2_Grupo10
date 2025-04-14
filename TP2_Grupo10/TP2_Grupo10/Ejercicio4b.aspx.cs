@@ -13,7 +13,7 @@ namespace TP2_Grupo10
         {
             string usuarioMensaje;
 
-            usuarioMensaje = Request.QueryString["mensaje"];
+            usuarioMensaje = Request.QueryString["mensajeB"];
 
             lblMensaje.Text =  usuarioMensaje;
         }

@@ -34,15 +34,16 @@ namespace TP2_Grupo10
                 {
                     //Cambio la variable mensaje
                     mensaje = "Bienvenido a mi página Sr./a Claudio";
+                    //Redireccion
+                    Response.Redirect("Ejercicio4b.aspx?mensajeB=" + Server.UrlEncode(mensaje));
                 }
                 else
                 {
                     //Cambio la variable mensaje
                     mensaje = "INGRESO INVALIDO INGRESO NO PERMITIDO";
+                    //Redireccion
+                    Response.Redirect("Ejercicio4c.aspx?mensajeE=" + Server.UrlEncode(mensaje));
                 }
-
-                //Redireccion
-                Response.Redirect("Ejercicio4b.aspx?mensaje=" + Server.UrlEncode(mensaje));
             }
             else
             {
