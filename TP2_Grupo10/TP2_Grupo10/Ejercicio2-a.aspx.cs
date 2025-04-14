@@ -16,7 +16,20 @@ namespace TP2_Grupo10
 
         protected void btnVerResumen_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Ejercicio2-b.aspx");
+            List<string> seleccionados = new List<string>();
+
+            foreach (ListItem item in CheckBoxList_Temas.Items)
+            {
+                if (item.Selected)
+                {
+                    seleccionados.Add(item.Text);
+                }
+            }
+
+            Session["Seleccionados"] = seleccionados;
+
+            Server.Transfer("Ejercicio2-b.aspx");
+
         }
     }
 }
