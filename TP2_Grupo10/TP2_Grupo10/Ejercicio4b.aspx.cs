@@ -17,5 +17,10 @@ namespace TP2_Grupo10
 
             lblMensaje.Text =  usuarioMensaje;
         }
+
+        protected void btnRedireccionFormPrincipal_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FormularioPrincipal.aspx");
+        }
     }
 }

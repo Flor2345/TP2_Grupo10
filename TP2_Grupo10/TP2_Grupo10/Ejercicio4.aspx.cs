@@ -27,7 +27,7 @@ namespace TP2_Grupo10
             string mensaje = "";
 
             //Validando que se haya escrito algo adentro
-            if (txtClave.Text != "" || txtUsuario.Text != "")
+            if (txtClave.Text != "" && txtUsuario.Text != "")
             {
                 //Validacion de que el usuario y contraseña coincidan
                 if (txtUsuario.Text == "claudio" && txtClave.Text == "casas")

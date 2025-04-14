@@ -11,7 +11,13 @@
             width: 100%;
         }
         .auto-style2 {
-            width: 930px;
+            width: 571px;
+        }
+        .auto-style3 {
+            width: 85px;
+        }
+        .auto-style4 {
+            width: 145px;
         }
     </style>
 </head>
@@ -20,7 +26,7 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -29,7 +35,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -38,7 +44,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">
                         <asp:Label ID="lblMensaje" runat="server" Font-Bold="True" Font-Size="16pt"></asp:Label>
                     </td>
@@ -49,7 +55,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -58,7 +64,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -67,7 +73,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -76,7 +82,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -86,6 +92,14 @@
                 </tr>
             </table>
         </div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style4">&nbsp;</td>
+                <td>
+                    <asp:Button ID="btnRedireccionFormPrincipal" runat="server" OnClick="btnRedireccionFormPrincipal_Click" Text="Volver al formulario principal" Width="187px" />
+                </td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
