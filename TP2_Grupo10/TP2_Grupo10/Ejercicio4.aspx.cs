@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Web;
 using System.Web.Services.Description;
 using System.Web.UI;
@@ -11,6 +12,8 @@ namespace TP2_Grupo10
 {
     public partial class Ejercicio4aspx : System.Web.UI.Page
     {
+        string nombre;
+        string apellido;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -24,16 +27,20 @@ namespace TP2_Grupo10
         protected void Button_Validar_Click(object sender, EventArgs e)
         {
             //Variables
+            nombre = "claudio";
+            apellido = "casas";
             string mensaje = "";
+            string nombreCapitalizado = char.ToUpper(nombre[0]) + nombre.Substring(1); 
+            
 
             //Validando que se haya escrito algo adentro
             if (txtClave.Text != "" && txtUsuario.Text != "")
             {
                 //Validacion de que el usuario y contraseña coincidan
-                if (txtUsuario.Text == "claudio" && txtClave.Text == "casas")
+                if (txtUsuario.Text == nombre && txtClave.Text == apellido)
                 {
                     //Cambio la variable mensaje
-                    mensaje = "Bienvenido a mi página Sr./a Claudio";
+                    mensaje = "Bienvenido a mi página Sr./a " + nombreCapitalizado;
                     //Redireccion
                     Response.Redirect("Ejercicio4b.aspx?mensajeB=" + Server.UrlEncode(mensaje));
                 }
