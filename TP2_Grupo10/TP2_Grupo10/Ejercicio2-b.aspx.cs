@@ -33,5 +33,10 @@ namespace TP2_Grupo10
 				tblTemas.Rows.Add(fila);
             }
         }
-	}
+
+        protected void btnVerResumen_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("FormularioPrincipal.aspx");
+        }
+    }
 }

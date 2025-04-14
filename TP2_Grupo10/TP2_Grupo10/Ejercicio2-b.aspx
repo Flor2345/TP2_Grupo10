@@ -16,7 +16,17 @@
         .auto-style7 {
             width: 130px;
         }
-    </style>
+    
+        .btn-resumen {
+            margin-left: 100px;
+            padding: 8px 16px;
+            background-color: #dcdcdc;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -126,6 +136,9 @@
                 </tr>
             </table>
         </asp:Panel>
+        <p>
+                <asp:Button ID="btnVolverAlFormularioPrincipal" runat="server" CssClass="btn-resumen" Text="Volver al formulario principal" OnClick="btnVerResumen_Click" />
+            </p>
     </form>
 </body>
 </html>
