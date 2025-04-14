@@ -117,7 +117,37 @@
                 </tr>
                 <tr>
                     <td class="auto-style16">
+                        &nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style16">
                         <asp:Label ID="LblTabla" runat="server"></asp:Label>
+                    </td>
+                    <td class="auto-style13">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style16">&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style16">
+                        <asp:Button ID="btnVolver" runat="server" OnClick="btnVolver_Click" Text="Volver al formulario principal" />
                     </td>
                     <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style18">&nbsp;</td>

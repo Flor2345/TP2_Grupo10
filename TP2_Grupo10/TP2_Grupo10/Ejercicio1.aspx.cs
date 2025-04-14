@@ -113,5 +113,10 @@ namespace TP2_Grupo10
             }
             
         }
+
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FormularioPrincipal.aspx");
+        }
     }
 }
