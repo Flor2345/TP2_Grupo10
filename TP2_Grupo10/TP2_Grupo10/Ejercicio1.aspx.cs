@@ -68,16 +68,38 @@ namespace TP2_Grupo10
         {
             if(Page.IsValid)
             {
-                //Casteo los numero de la text box como int y a los productos como string y los guardo en variables
+                // Casteo los números de las TextBox como int y a los productos como string
                 int cantidad1 = int.Parse(txtCantidadIngreso1.Text);
                 int cantidad2 = int.Parse(txtCantidadIngreso2.Text);
                 string producto1 = txtProductoIngreso1.Text;
                 string producto2 = txtProductoIngreso2.Text;
 
-                //Construyo la tabla (No corresponde a mi aporte)
+                // Construyo la tabla HTML como string
+                string tabla = "<table border='1'>";
+                tabla += "<tr><td><b>Producto</b></td><td><b>Cantidad</b></td></tr>";
+
+                tabla += "<tr>";
+                tabla += "<td>" + producto1 + "</td>";
+                tabla += "<td>" + cantidad1 + "</td>";
+                tabla += "</tr>";
+
+                tabla += "<tr>";
+                tabla += "<td>" + producto2 + "</td>";
+                tabla += "<td>" + cantidad2 + "</td>";
+                tabla += "</tr>";
+
+                int total = cantidad1 + cantidad2;
+
+                tabla += "<tr>";
+                tabla += "<td><b>TOTAL</b></td>";
+                tabla += "<td>" + total + "</td>";
+                tabla += "</tr>";
+                tabla += "</table>";
+
 
                 //Cambio el texto del label (tampoco corresponde)
-
+                LblTabla.Text = tabla;
+                
                 //Limpio los text box 
                 txtCantidadIngreso1.Text = "";
                 txtCantidadIngreso2.Text = "";
