@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Services.Description;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace TP2_Grupo10
 {
@@ -22,27 +23,32 @@ namespace TP2_Grupo10
 
         protected void Button_Validar_Click(object sender, EventArgs e)
         {
-            string mensaje;
+            //Variables
+            string mensaje = "";
 
-            // if () Para su posterior uso para las validaciones
-            //{
-            if (txtUsuario.Text == "claudio" && txtClave.Text == "casas")
+            //Validando que se haya escrito algo adentro
+            if (txtClave.Text != "" || txtUsuario.Text != "")
             {
-                mensaje = "Bienvenido a mi página Sr./a Claudio";
+                //Validacion de que el usuario y contraseña coincidan
+                if (txtUsuario.Text == "claudio" && txtClave.Text == "casas")
+                {
+                    //Cambio la variable mensaje
+                    mensaje = "Bienvenido a mi página Sr./a Claudio";
+                }
+                else
+                {
+                    //Cambio la variable mensaje
+                    mensaje = "INGRESO INVALIDO INGRESO NO PERMITIDO";
+                }
+
+                //Redireccion
+                Response.Redirect("Ejercicio4b.aspx?mensaje=" + Server.UrlEncode(mensaje));
             }
             else
             {
-                mensaje = "INGRESO INVALIDO INGRESO NO PERMITIDO";
+                //Mensaje de error
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Debe rellenar todos los campos');", true);
             }
-
-            Response.Redirect("Ejercicio4b.aspx?UsuarioMensaje=" + mensaje, false);
-
-
-            // }
-            /* else
-             {
-
-             }*/
         }
     }
 }
