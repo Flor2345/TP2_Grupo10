@@ -63,8 +63,17 @@ namespace TP2_Grupo10
             // Calcula el precio total sumando el precio de la memoria y los accesorios.
             decimal PrecioTotal = precioMemoria + precioTotalAccesorios;
 
-            // Muestra el precio total formateado como moneda.
-            Precio_Final.Text = "El Precio final es de " + PrecioTotal.ToString("C2");
+            //Validacion
+            if (DDL_Memoria.SelectedValue != "0")
+            {
+                // Muestra el precio total formateado como moneda.
+                Precio_Final.Text = "El Precio final es de " + PrecioTotal.ToString("C2");
+            }
+            else
+            {
+                //Mensaje de error
+                Precio_Final.Text = "Seleccione al menos una opcion de RAM.";
+            }
         }   
     }
 }
