@@ -25,5 +25,12 @@ namespace TP2_Grupo10
         {
             Response.Redirect("FormularioPrincipal.aspx");
         }
+
+        protected void LnkBtnColorRojo_Click(object sender, EventArgs e)
+        {
+            //Cambia el texto y el color del label al hacer clic en el LinkButton
+            lblTextoColoreado.Text = "El color seleccionado es Rojo";
+            lblTextoColoreado.ForeColor = System.Drawing.Color.Red;
+        }
     }
 }

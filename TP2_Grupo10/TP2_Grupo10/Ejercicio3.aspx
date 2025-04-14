@@ -30,7 +30,7 @@
             <table class="auto-style1">
                 <tr>
                     <td>
-                        <asp:LinkButton ID="LnkBtnColorRojo" runat="server">Rojo</asp:LinkButton>                        
+                        <asp:LinkButton ID="LnkBtnColorRojo" runat="server" OnClick="LnkBtnColorRojo_Click">Rojo</asp:LinkButton>                        
                     </td>
                     <td>&nbsp;</td>
                 </tr>
