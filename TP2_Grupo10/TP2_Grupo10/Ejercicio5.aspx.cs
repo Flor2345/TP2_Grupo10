@@ -74,6 +74,11 @@ namespace TP2_Grupo10
                 //Mensaje de error
                 Precio_Final.Text = "Seleccione al menos una opcion de RAM.";
             }
-        }   
+        }
+
+        protected void btnRedireccionFormPrincipal_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FormularioPrincipal.aspx");
+        }
     }
 }

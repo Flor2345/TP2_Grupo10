@@ -17,7 +17,7 @@
             width: 85px;
         }
         .auto-style4 {
-            width: 145px;
+            width: 163px;
         }
     </style>
 </head>
