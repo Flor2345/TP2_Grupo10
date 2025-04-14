@@ -58,21 +58,21 @@
         <div class="form-container">
             <div class="form-row">
                 <label class="form-label">Nombre:</label>
-                <asp:TextBox ID="TextBox1" runat="server" CssClass="form-input"></asp:TextBox>
+                <asp:TextBox ID="txtNombre" runat="server" CssClass="form-input"></asp:TextBox>
             </div>
 
             <div class="form-row">
                 <label class="form-label">Apellido:</label>
-                <asp:TextBox ID="lblApellido" runat="server" CssClass="form-input"></asp:TextBox>
+                <asp:TextBox ID="txtApellido" runat="server" CssClass="form-input"></asp:TextBox>
             </div>
 
             <div class="form-row">
                 <label class="form-label">Ciudad:</label>
                 <asp:DropDownList ID="DropDownList_Ciudad" runat="server" Width="256px" AutoPostBack="True">
                     <asp:ListItem Value="Seleccione una opcion">Seleccione una opcion</asp:ListItem>
-                    <asp:ListItem Value="zona oeste">San Miguel</asp:ListItem>
-                    <asp:ListItem Value="zona sur">Boedo</asp:ListItem>
-                    <asp:ListItem Value="zona norte">Gral. Pacheco</asp:ListItem>
+                    <asp:ListItem Value="Oeste">San Miguel</asp:ListItem>
+                    <asp:ListItem Value="Sur">Boedo</asp:ListItem>
+                    <asp:ListItem Value="Norte">Gral. Pacheco</asp:ListItem>
                 </asp:DropDownList>
             </div>
 
