@@ -62,7 +62,7 @@
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style3">Nombre</td>
                     <td>
-                        <asp:Label ID="lblNombre" runat="server" Font-Bold="True"></asp:Label>
+                        <asp:Label ID="lblNombre" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="DarkSlateGray"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -74,7 +74,7 @@
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style3">Apellido</td>
                     <td>
-                        <asp:Label ID="lblApellido" runat="server" Font-Bold="True"></asp:Label>
+                        <asp:Label ID="lblApellido" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="DarkSlateGray"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -86,7 +86,7 @@
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style3">Zona</td>
                     <td>
-                        <asp:Label ID="lblZona" runat="server" Font-Bold="True"></asp:Label>
+                        <asp:Label ID="lblZona" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="DarkSlateGray"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -137,10 +137,10 @@
             </table>
         </asp:Panel>
         <p>
-                <asp:Button ID="btnVolverAlFormularioPrincipal" runat="server" CssClass="btn-resumen" Text="Volver al formulario principal" OnClick="btnVerResumen_Click" />
+                <asp:Button ID="btnVolverAlFormularioPrincipal" runat="server" CssClass="btn-resumen" Text="Volver al formulario principal" OnClick="btnVerResumen_Click" BackColor="LightGreen" BorderStyle="Solid" Font-Bold="True" Font-Size="Medium" ForeColor="White" />
         </p>
         <p>
-                 <asp:Button ID="btnVolverAEjercicio2a" runat="server" CssClass="btn-resumen" Text="Volver a formulario anterior" OnClick="btnVolverAEjercicio2a_Click" />
+                 <asp:Button ID="btnVolverAEjercicio2a" runat="server" CssClass="btn-resumen" Text="Volver a formulario anterior" OnClick="btnVolverAEjercicio2a_Click" BackColor="LightGreen" BorderStyle="Solid" Font-Bold="True" Font-Size="Medium" ForeColor="White" />
         </p>
     </form>
 </body>
