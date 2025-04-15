@@ -136,11 +136,13 @@ namespace TP2_Grupo10
         {
             if (dropDownList.SelectedIndex == 0)
             {
+                dropDownList.BackColor = System.Drawing.Color.LightCoral;
                 Validar_IngresosD.Visible = true;
                 return false;
             }
             else
             {
+                dropDownList.BackColor = System.Drawing.Color.LightGreen;
                 Validar_IngresosD.Visible = false;
                 return true;
             }
