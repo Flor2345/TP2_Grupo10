@@ -58,27 +58,36 @@
         <div class="form-container">
             <div class="form-row">
                 <label class="form-label">Nombre:</label>
-                <asp:TextBox ID="txtNombre" runat="server" CssClass="form-input"></asp:TextBox>
+                <asp:TextBox ID="txtNombre" runat="server" CssClass="form-input" CausesValidation="True" AutoPostBack="True"></asp:TextBox>
+                <br />
+                        <asp:CustomValidator ID="CustomValidator_Nombre" runat="server" ControlToValidate="txtNombre" Display="Dynamic"  OnServerValidate="CustomValidator_Nombre_ServerValidate"></asp:CustomValidator>
             </div>
 
             <div class="form-row">
                 <label class="form-label">Apellido:</label>
-                <asp:TextBox ID="txtApellido" runat="server" CssClass="form-input"></asp:TextBox>
+                <asp:TextBox ID="txtApellido" runat="server" CssClass="form-input" CausesValidation="True" AutoPostBack="True"></asp:TextBox>
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:CustomValidator ID="CustomValidator_Apellido" runat="server" ControlToValidate="txtApellido" Display="Dynamic" OnServerValidate="CustomValidator_Apellido_ServerValidate"></asp:CustomValidator>
             </div>
 
             <div class="form-row">
                 <label class="form-label">Ciudad:</label>
-                <asp:DropDownList ID="DropDownList_Ciudad" runat="server" Width="256px" AutoPostBack="True">
+                <asp:DropDownList ID="DropDownList_Ciudad" runat="server" Width="256px" AutoPostBack="True" CausesValidation="True">
                     <asp:ListItem Value="Seleccione una opcion">Seleccione una opcion</asp:ListItem>
                     <asp:ListItem Value="Oeste">San Miguel</asp:ListItem>
                     <asp:ListItem Value="Sur">Boedo</asp:ListItem>
                     <asp:ListItem Value="Norte">Gral. Pacheco</asp:ListItem>
                 </asp:DropDownList>
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:RequiredFieldValidator ID="RFV_Ciudad" runat="server" ControlToValidate="DropDownList_Ciudad" InitialValue="Seleccione una opcion." Visible="False" EnableViewState="False" Display="Dynamic">Elija una ciudad.</asp:RequiredFieldValidator>
             </div>
 
             <div class="form-row">
-                <label class="form-label">Temas:</label>
-                <asp:CheckBoxList ID="CheckBoxList_Temas" runat="server" CssClass="form-checkboxlist" AutoPostBack="True">
+                <label class="form-label">Temas:</label><asp:CustomValidator ID="CV_Temas" runat="server" Display="Dynamic"></asp:CustomValidator>
+
+                    &nbsp;<asp:CheckBoxList ID="CheckBoxList_Temas" runat="server" CssClass="form-checkboxlist" AutoPostBack="True" CausesValidation="True">
                     <asp:ListItem Value="1">Ciencias</asp:ListItem>
                     <asp:ListItem Value="2">Literatura</asp:ListItem>
                     <asp:ListItem Value="3">Historia</asp:ListItem>

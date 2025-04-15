@@ -37,7 +37,8 @@ namespace TP2_Grupo10
             }
             else
             {
-                textBox.BackColor = Color.LightGreen; 
+                textBox.BackColor = Color.LightGreen;
+                customValidator.ErrorMessage = "";
                 return true;
             }
         }
@@ -129,6 +130,37 @@ namespace TP2_Grupo10
             // Si ambas validaciones pasan, limpia el mensaje de error y retorna true.
             Validar_IngresosC.ErrorMessage = "";
             return true;
+        }
+
+        public bool Validar_DropDownList(DropDownList dropDownList, RequiredFieldValidator Validar_IngresosD)
+        {
+            if (dropDownList.SelectedIndex == 0)
+            {
+                Validar_IngresosD.Visible = true;
+                return false;
+            }
+            else
+            {
+                Validar_IngresosD.Visible = false;
+                return true;
+            }
+        }
+
+        public bool Validar_ChekBpxList(CheckBoxList checkBoxList, CustomValidator Validar_IngresosCB, string error)
+        {
+
+            if (checkBoxList.SelectedIndex == -1)
+            {
+                Validar_IngresosCB.ErrorMessage = error;
+                checkBoxList.BackColor = System.Drawing.Color.LightCoral;
+                return false;
+            }
+            else
+            {
+                Validar_IngresosCB.ErrorMessage = "";
+                checkBoxList.BackColor = System.Drawing.Color.LightGreen;
+                return true;
+            }
         }
     }
 }

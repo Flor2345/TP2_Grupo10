@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP2_Grupo10", "TP2_Grupo10\TP2_Grupo10.csproj", "{D9C79A9A-1CC0-4723-8324-D8BB9A71F994}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiPractica_TP_N°2", "..\..\..\Resolucion Practicas\Practica TPs\MiPractica_TP_N°2\MiPractica_TP_N°2\MiPractica_TP_N°2.csproj", "{D34B963C-8696-4FFC-8771-FDBF5343F897}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D9C79A9A-1CC0-4723-8324-D8BB9A71F994}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9C79A9A-1CC0-4723-8324-D8BB9A71F994}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9C79A9A-1CC0-4723-8324-D8BB9A71F994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D34B963C-8696-4FFC-8771-FDBF5343F897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D34B963C-8696-4FFC-8771-FDBF5343F897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D34B963C-8696-4FFC-8771-FDBF5343F897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D34B963C-8696-4FFC-8771-FDBF5343F897}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
