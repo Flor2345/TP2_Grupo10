@@ -33,15 +33,6 @@ namespace TP2_Grupo10
         protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
-        /// Control lblProductoIngreso1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProductoIngreso1;
-
-        /// <summary>
         /// Control txtProductoIngreso1.
         /// </summary>
         /// <remarks>
@@ -49,15 +40,6 @@ namespace TP2_Grupo10
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtProductoIngreso1;
-
-        /// <summary>
-        /// Control lblCantidadIngreso1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCantidadIngreso1;
 
         /// <summary>
         /// Control txtCantidadIngreso1.
@@ -69,15 +51,6 @@ namespace TP2_Grupo10
         protected global::System.Web.UI.WebControls.TextBox txtCantidadIngreso1;
 
         /// <summary>
-        /// Control lblProductoIngreso2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProductoIngreso2;
-
-        /// <summary>
         /// Control txtProductoIngreso2.
         /// </summary>
         /// <remarks>
@@ -85,15 +58,6 @@ namespace TP2_Grupo10
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtProductoIngreso2;
-
-        /// <summary>
-        /// Control lblCantidadIngreso2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCantidadIngreso2;
 
         /// <summary>
         /// Control txtCantidadIngreso2.
@@ -132,15 +96,6 @@ namespace TP2_Grupo10
         protected global::System.Web.UI.WebControls.Button BtnGenerarTabla;
 
         /// <summary>
-        /// Control LblTabla.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblTabla;
-
-        /// <summary>
         /// Control btnVolver.
         /// </summary>
         /// <remarks>
@@ -148,5 +103,14 @@ namespace TP2_Grupo10
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnVolver;
+
+        /// <summary>
+        /// Control LblTabla.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblTabla;
     }
 }

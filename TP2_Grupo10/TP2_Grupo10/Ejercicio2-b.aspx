@@ -138,7 +138,10 @@
         </asp:Panel>
         <p>
                 <asp:Button ID="btnVolverAlFormularioPrincipal" runat="server" CssClass="btn-resumen" Text="Volver al formulario principal" OnClick="btnVerResumen_Click" />
-            </p>
+        </p>
+        <p>
+                 <asp:Button ID="btnVolverAEjercicio2a" runat="server" CssClass="btn-resumen" Text="Volver a formulario anterior" OnClick="btnVolverAEjercicio2a_Click" />
+        </p>
     </form>
 </body>
 </html>
