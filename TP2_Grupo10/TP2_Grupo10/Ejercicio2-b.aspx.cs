@@ -11,9 +11,9 @@ namespace TP2_Grupo10
 	{
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblNombre.Text = Session["Nombre"] as string;
-            lblApellido.Text = Session["Apellido"] as string;
-            lblZona.Text = Session["Zona"] as string;
+            lblNombre.Text = Request["txtNombre"];
+            lblApellido.Text = Request["txtApellido"];
+            lblZona.Text = Request["DropDownList_Ciudad"];
 
             if (lblZona.Text == "Seleccione una opcion")
             {
@@ -22,18 +22,15 @@ namespace TP2_Grupo10
 
             List<string> seleccionados = Session["Seleccionados"] as List<string>;
 
-            if (seleccionados != null)
+            foreach (string texto in seleccionados)
             {
-                foreach (string texto in seleccionados)
-                {
-                    TableRow fila = new TableRow();
-                    TableCell celda = new TableCell();
+                TableRow fila = new TableRow();
+                TableCell celda = new TableCell();
 
-                    celda.Text = texto;
-                    fila.Cells.Add(celda);
+                celda.Text = texto;
+                fila.Cells.Add(celda);
 
-                    tblTemas.Rows.Add(fila);
-                }
+                tblTemas.Rows.Add(fila);
             }
         }
 
